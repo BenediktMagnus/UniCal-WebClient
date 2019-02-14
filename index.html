@@ -3,9 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>UniCal Web Client</title>
-        <script src="/lib/tui-code-snippet.min.js"></script>
-        <script src="/lib/tui-calendar.min.js"></script>
-        <script src="/js/main.js"></script>
         <link rel="stylesheet" href="/lib/tui-calendar.min.css">
         <link rel="stylesheet" href="/lib/tui-date-picker.css">
         <link rel="stylesheet" href="/lib/tui-time-picker.css">
@@ -26,7 +23,7 @@
             <div id="menu">
                 <span id="timeframe" class="dropdown">
                     <button id="timeframeButton" type="button">
-                        <span id="timeframeButtonText"></span>
+                        <span id="timeframeButtonText">Timeframe</span>
                     </button>
                     <ul id="timeframeMenu" class="dropdownMenu">
                         <li class="timeframeSetting" unit="day" count="1">
@@ -62,4 +59,11 @@
             <div id="calendar"></div>
         </div>
     </body>
+
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/tui-code-snippet.min.js"></script>
+    <script src="/lib/tui-time-picker.min.js"></script>
+    <script src="/lib/tui-date-picker.min.js"></script>
+    <script src="/lib/tui-calendar.min.js"></script>
+    <script src="/js/main.js"></script>
 </html>
