@@ -10,7 +10,19 @@ body {
 }
 
 button {
+    padding: 8px 12px;;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
     cursor: pointer;
+}
+
+.roundButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 #leftBar {
@@ -77,13 +89,9 @@ button {
     list-style: none;
 }
 
-#timeframeButton {
-    padding: 0 8px 0 12px;
-}
-
 #timeframeButtonName {
     min-width: 60px;
     display: inline-block;
     text-align: left;
     line-height: 30px;
-  }
+}
