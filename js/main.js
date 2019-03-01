@@ -1,11 +1,14 @@
-tui.usageStatistics = false;
+'use strict';
 
-const Calendar = tui.Calendar;
-var calendar;
+(function() {
+    tui.usageStatistics = false;
 
-window.addEventListener("load", function () {
-    calendar = new Calendar('#calendar', {
-        defaultView: 'month',
+    const Calendar = tui.Calendar;
+
+    var calendar = new Calendar('#calendar', {
+        defaultView: 'week',
+        useCreationPopup: true,
+        useDetailPopup: true,
         week: {
             startDayOfWeek: 1
         },
@@ -13,4 +16,4 @@ window.addEventListener("load", function () {
         template: {
         }
     });
-}, false);
+})();
